@@ -1,0 +1,107 @@
+/* Reset Styles */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* General Styles */
+
+body {
+  @extend %main-typo;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.root-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.heading {
+  color: $black;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5.6rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.button {
+  color: $white;
+  background-color: $secondary-color;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border-radius: $border-radius;
+}

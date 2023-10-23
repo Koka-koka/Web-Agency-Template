@@ -1,0 +1,37 @@
+/* Theme Colors */
+$primary-color: rgba(0, 0, 0, 0.5);
+$secondary-color: #6854fc;
+$black: #000;
+$white: #fff;
+$bg-color: rgba(196, 196, 196, 0.15);
+$body-bg-color: #f9f9fb;
+$items-bg-color: #f0eeff;
+
+/* borders */
+$border-size: 1px;
+$border-radius: 20px;
+
+// Typography
+%main-typo {
+  color: $primary-color;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.9rem;
+  letter-spacing: 0.36px;
+}
+
+// Layout
+%flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin ds-flex($jc: space-between, $ai: center, $gap: 10px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
