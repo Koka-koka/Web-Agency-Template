@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 8.5px;
+  }
+  .header {
+    &__btns {
+      max-width: 250px;
+    }
+  }
+  .burger-menu {
+    width: 95%;
+  }
+}
+@media (max-width: 490px) {
+  html {
+    font-size: 7.5px;
+  }
+  .header {
+    &__btns {
+      display: block;
+      width: fit-content;
+    }
+    &__btns .button {
+      display: none;
+    }
+  }
+  .burger-menu {
+    padding: 5rem;
+    &__socials {
+      width: 100%;
+    }
+  }
+}

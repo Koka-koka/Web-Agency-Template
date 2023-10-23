@@ -6,6 +6,7 @@ $white: #fff;
 $bg-color: rgba(196, 196, 196, 0.15);
 $body-bg-color: #f9f9fb;
 $items-bg-color: #f0eeff;
+$btn-hover: #7564f6;
 
 /* borders */
 $border-size: 1px;
@@ -14,19 +15,20 @@ $border-radius: 20px;
 // Typography
 %main-typo {
   color: $primary-color;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.9rem;
+  line-height: 29px;
   letter-spacing: 0.36px;
 }
 
 // Layout
 %flex-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 @mixin ds-flex($jc: space-between, $ai: center, $gap: 10px) {

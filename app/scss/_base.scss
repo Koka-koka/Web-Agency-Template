@@ -62,8 +62,10 @@ a {
 
 body {
   @extend %main-typo;
+  background-color: $body-bg-color;
   overflow-x: hidden;
   height: 100%;
+  position: relative;
 }
 
 .root-wrapper {
@@ -77,7 +79,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -100,8 +102,37 @@ body {
 .button {
   color: $white;
   background-color: $secondary-color;
-  line-height: 2.5rem;
+  line-height: 25px;
   text-transform: capitalize;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
+  border: 1px solid $secondary-color;
   border-radius: $border-radius;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: $items-bg-color;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+}
+.button:active {
+  scale: (0.95);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 80;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
 }
