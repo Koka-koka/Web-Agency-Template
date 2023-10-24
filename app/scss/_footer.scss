@@ -1,0 +1,68 @@
+.footer {
+  background-color: #0a142f;
+  padding: 8.5rem 10px 6.5rem;
+  text-align: center;
+  // .footer__wrapper
+
+  &__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  // .footer__logo
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 7.5rem;
+  }
+
+  // .footer__menu
+
+  &__menu {
+    margin-bottom: 7.5rem;
+  }
+
+  // .footer__menu-list
+
+  &__menu-list {
+    @include ds-flex;
+  }
+
+  // .footer__menu-item
+
+  &__menu-item {
+    color: $white;
+  }
+
+  // .footer__menu-link
+
+  &__menu-link {
+    transition: all 0.2s ease;
+  }
+
+  &__menu-link:hover {
+    color: $secondary-color;
+  }
+
+  // .footer__terms
+
+  &__terms {
+    @extend %flex-center;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    margin-right: 10rem;
+  }
+
+  // .footer__conditions
+
+  &__conditions {
+    margin-right: 15px;
+  }
+}
+.footer .socials {
+  margin-bottom: 7rem;
+}

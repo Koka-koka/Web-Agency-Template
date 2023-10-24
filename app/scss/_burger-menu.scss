@@ -35,6 +35,11 @@
     font-size: 52px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  &__btn-close:hover {
+    transform: rotate(360deg);
   }
 
   // .burger-menu__list

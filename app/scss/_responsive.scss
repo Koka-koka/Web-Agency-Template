@@ -30,4 +30,13 @@
       width: 100%;
     }
   }
+  .socials {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    &__copyright {
+      margin-right: 6rem;
+    }
+  }
 }

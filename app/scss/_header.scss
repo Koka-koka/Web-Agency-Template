@@ -25,24 +25,3 @@
 #menu-btn {
   cursor: pointer;
 }
-.socials {
-  @include ds-flex($gap: 20px);
-  // .socials__item
-
-  &__item {
-    width: 6.5rem;
-    height: 6.5rem;
-    padding: 2px;
-    @extend %flex-center;
-    background-color: $items-bg-color;
-    border-radius: $border-radius;
-  }
-
-  &__link {
-    transition: all 0.2s ease;
-  }
-
-  &__item:hover > &__link {
-    scale: 1.25;
-  }
-}
