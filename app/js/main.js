@@ -18,3 +18,6 @@ overlay.addEventListener("click", function () {
   burgerMenu.classList.remove("show");
   overlay.classList.remove("show");
 });
+
+// Animon init
+Animon.animon();

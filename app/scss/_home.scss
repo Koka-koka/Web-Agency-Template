@@ -130,11 +130,6 @@
     }
   }
 
-  // .hero__link
-
-  &__link {
-  }
-
   // .hero__img
 
   &__img {
@@ -220,7 +215,57 @@
     background-color: #aee2ff;
   }
 }
-.container {
-}
-.button {
+
+// Services Section
+.home-services {
+  padding: 5.5rem 0 11rem;
+  text-align: center;
+  // .home-services__title
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  // .home-services__text
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  // .home-services__list
+
+  &__list {
+    @include ds-flex;
+    padding: 0 15rem;
+    flex-wrap: wrap;
+  }
+
+  // .home-services__list-item
+
+  &__list-item {
+    max-width: 350px;
+    margin-bottom: 3rem;
+  }
+
+  // .home-services__list-img
+
+  &__list-img {
+    @extend %flex-center;
+    width: 100px;
+    height: 100px;
+    background-color: $items-bg-color;
+    border-radius: 50%;
+    margin: 0 auto 3rem;
+  }
+
+  // .home-services__list-title
+
+  &__list-title {
+    margin-bottom: 10px;
+  }
+
+  // .home-services__list-text
+
+  &__list-text {
+  }
 }

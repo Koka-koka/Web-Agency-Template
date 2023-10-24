@@ -1,3 +1,12 @@
+@media (max-width: 1075px) {
+  // home services
+  .home-services {
+    &__list {
+      padding: 0 5rem;
+    }
+  }
+}
+
 @media (max-width: 990px) {
   // hero section
   .hero {
@@ -11,9 +20,15 @@
       display: none;
     }
   }
+  // home services
+  .home-services {
+    &__list {
+      padding: 0 1rem;
+    }
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   html {
     font-size: 8.5px;
   }
@@ -25,7 +40,17 @@
   .burger-menu {
     width: 95%;
   }
+  // home services
+  .home-services {
+    &__list {
+      @include ds-flex($jc: center);
+    }
+    &__list-item {
+      max-width: 450px;
+    }
+  }
 }
+
 @media (max-width: 490px) {
   html {
     font-size: 7.5px;
@@ -45,6 +70,7 @@
       width: 100%;
     }
   }
+  // hero section
   .hero {
     text-align: center;
     &__btns,
