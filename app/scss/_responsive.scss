@@ -1,3 +1,18 @@
+@media (max-width: 990px) {
+  // hero section
+  .hero {
+    &__wrapper {
+      justify-content: center;
+    }
+    &__descr {
+      flex-basis: 90%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 8.5px;
@@ -28,6 +43,23 @@
     padding: 5rem;
     &__socials {
       width: 100%;
+    }
+  }
+  .hero {
+    text-align: center;
+    &__btns,
+    &__sticker {
+      flex-direction: column;
+    }
+    &__heading,
+    &__sticker {
+      margin: 0 auto 15px;
+    }
+    &__heading {
+      font-size: 4rem;
+    }
+    &__text {
+      margin-bottom: 3rem;
     }
   }
   .socials {

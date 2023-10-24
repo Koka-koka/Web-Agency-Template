@@ -100,6 +100,19 @@ body {
   text-align: center;
 }
 
+.title {
+  color: $secondary-color;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.44px;
+}
+
+.title:hover {
+  color: $hover-color;
+}
+
 .button {
   color: $white;
   background-color: $secondary-color;
