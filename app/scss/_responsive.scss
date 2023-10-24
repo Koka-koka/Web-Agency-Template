@@ -49,6 +49,15 @@
       max-width: 450px;
     }
   }
+  // Companies
+  .companies {
+    &__logos-top,
+    &__logos-bottom {
+      @include ds-flex($jc: center);
+      flex-wrap: wrap;
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 490px) {

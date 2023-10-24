@@ -263,9 +263,49 @@
   &__list-title {
     margin-bottom: 10px;
   }
+}
 
-  // .home-services__list-text
+// Companies Section
 
-  &__list-text {
+.companies {
+  padding-bottom: 12rem;
+  text-align: center;
+  // .companies__wrapper
+
+  &__wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  // .companies__heading
+
+  &__heading {
+    margin-bottom: 5px;
+  }
+
+  // .companies__text
+
+  &__text {
+    margin-bottom: 3.5rem;
+  }
+
+  // .companies__logos
+
+  &__logos {
+  }
+
+  // .companies__logos-top
+
+  &__logos-top {
+    @include ds-flex;
+    margin-bottom: 6rem;
+    padding: 0 6rem;
+  }
+
+  // .companies__logos-bottom
+
+  &__logos-bottom {
+    @include ds-flex($jc: space-around);
+    padding: 0 10rem;
   }
 }

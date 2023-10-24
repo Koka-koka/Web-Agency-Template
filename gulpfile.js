@@ -70,7 +70,7 @@ function sprite() {
 }
 
 function buildStyles() {
-  return src(["./node_modules/animon/dist/animon.css", "app/scss/style.scss"])
+  return src(["./node_modules/aos/src/sass/aos.scss", "app/scss/style.scss"])
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 version"],
@@ -84,7 +84,7 @@ function buildStyles() {
 }
 
 function buildScripts() {
-  return src(["./node_modules/animon/dist/animon.iife.js", "app/js/main.js"])
+  return src(["./node_modules/aos/dist/aos.js", "app/js/main.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))

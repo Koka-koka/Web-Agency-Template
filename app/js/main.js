@@ -19,5 +19,7 @@ overlay.addEventListener("click", function () {
   overlay.classList.remove("show");
 });
 
-// Animon init
-Animon.animon();
+// AOS init
+AOS.init({
+  once: true,
+});
