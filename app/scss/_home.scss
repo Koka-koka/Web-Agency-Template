@@ -289,11 +289,6 @@
     margin-bottom: 3.5rem;
   }
 
-  // .companies__logos
-
-  &__logos {
-  }
-
   // .companies__logos-top
 
   &__logos-top {
@@ -307,5 +302,91 @@
   &__logos-bottom {
     @include ds-flex($jc: space-around);
     padding: 0 10rem;
+  }
+}
+
+// Process Section
+.process {
+  padding-bottom: 10rem;
+  // .process__wrapper
+
+  &__wrapper {
+    @include ds-flex($ai: start, $gap: 5rem);
+  }
+
+  // .process__img
+
+  &__img {
+  }
+
+  // .process__descr
+
+  &__descr {
+    flex-basis: 60%;
+  }
+
+  // .process__heading
+
+  &__heading {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  // .process__text
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  // .process__list
+
+  &__list {
+  }
+
+  // .process__item
+
+  &__item {
+    @include ds-flex($ai: start, $gap: 30px);
+    margin-bottom: 3rem;
+  }
+
+  // .process__item-icon
+
+  &__item-icon {
+    @extend %flex-center;
+    width: 165px;
+    height: 60px;
+    border-radius: $border-radius;
+  }
+
+  &__item:nth-child(1) &__item-icon {
+    background-color: #fcedee;
+  }
+  &__item:nth-child(2) &__item-icon {
+    background-color: #bed3ff;
+  }
+  &__item:nth-child(3) &__item-icon {
+    background-color: #defeea;
+  }
+  &__item:nth-child(4) &__item-icon {
+    background-color: #ffeea6;
+  }
+
+  // .process__item-descr
+
+  &__item-descr {
+  }
+
+  // .process__item-title
+
+  &__item-title {
+    color: $black;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  // .process__item-text
+
+  &__item-text {
   }
 }
