@@ -70,7 +70,11 @@ function sprite() {
 }
 
 function buildStyles() {
-  return src(["./node_modules/aos/src/sass/aos.scss", "app/scss/style.scss"])
+  return src([
+    "./node_modules/aos/src/sass/aos.scss",
+    "./node_modules/swiper/swiper-bundle.css",
+    "app/scss/style.scss",
+  ])
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 version"],
@@ -84,7 +88,11 @@ function buildStyles() {
 }
 
 function buildScripts() {
-  return src(["./node_modules/aos/dist/aos.js", "app/js/main.js"])
+  return src([
+    "./node_modules/aos/dist/aos.js",
+    "./node_modules/swiper/swiper-bundle.js",
+    "app/js/main.js",
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -119,7 +127,7 @@ function buildDist() {
 
 function watching() {
   watch(["app/scss/**/*.scss"], buildStyles);
-  watch(["app/js/**/*.js"], buildScripts);
+  watch(["app/js/main.js"], buildScripts);
   watch(["app/images/src"], optimizeImages);
   watch(["app/components/*", "app/pages/*"], assemblyPages);
   watch(["app/*.html"]).on("change", browserSync.reload);
