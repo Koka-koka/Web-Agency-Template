@@ -25,7 +25,7 @@ AOS.init({
 });
 
 // Swiper Work Slider
-const swiper = new Swiper(".work__slider", {
+const workSlider = new Swiper(".work__slider", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 1,
@@ -46,5 +46,20 @@ const swiper = new Swiper(".work__slider", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
+  },
+});
+
+// Swiper Testimonials Slider
+const testimonialsSlider = new Swiper(".testimonials__slider", {
+  // Optional parameters
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".testimonials__btn-prev",
+    prevEl: ".testimonials__btn-next",
   },
 });
