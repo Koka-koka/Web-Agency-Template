@@ -159,6 +159,9 @@
     &__imgs {
       width: 90%;
     }
+    &__imgs-row--bottom &__img:nth-child(1) {
+      margin-top: -60px;
+    }
     &__descr {
       width: 90%;
     }

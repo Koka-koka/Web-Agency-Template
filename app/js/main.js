@@ -63,3 +63,36 @@ const testimonialsSlider = new Swiper(".testimonials__slider", {
     prevEl: ".testimonials__btn-next",
   },
 });
+
+// Acordion
+const accordionItemHeaders = document.querySelectorAll(
+  ".accordion__item-header"
+);
+const accordionFirstItemBody = document.querySelector(
+  ".accordion__item:nth-child(1) .accordion__item-body"
+);
+// Open first item
+accordionFirstItemBody.style.maxHeight =
+  accordionFirstItemBody.scrollHeight + "px";
+
+accordionItemHeaders.forEach((accordionItemHeader) => {
+  accordionItemHeader.addEventListener("click", (event) => {
+    // Remove active class all headers except clicked item
+    accordionItemHeaders.forEach((accordionItemHeader) => {
+      if (accordionItemHeader == event.target) {
+        return;
+      }
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      accordionItemHeader.classList.remove("active");
+      accordionItemBody.style.maxHeight = 0;
+    });
+    // If clicked item is open close and vice versa
+    event.target.classList.toggle("active");
+    const accordionItemBody = event.target.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});

@@ -673,3 +673,84 @@
     background-color: $secondary-color;
   }
 }
+
+// Acordion Section
+.accordion {
+  padding-bottom: 5rem;
+  // .accordion__heading
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  // .accordion__text
+
+  &__text {
+    max-width: 93rem;
+    margin: 0 auto 4rem;
+    text-align: center;
+  }
+
+  &__items {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  // .accordion__item
+
+  &__item {
+    margin-bottom: 2.5rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  // .accordion__item-header
+
+  &__item-header {
+    color: $black;
+    padding: 10px 20px;
+    min-height: 3.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+
+  &__item-header.active::after {
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: $black;
+    padding-right: 1rem;
+  }
+
+  &__item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  // &__item:nth-child(1) &__item-body {
+  //   transition: all 0.2s ease;
+  //   max-height: 800px;
+  // }
+
+  &__item-body-content {
+    padding: 1rem 2rem;
+    border-top: 2px solid;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        $secondary-color,
+        transparent
+      )
+      1;
+  }
+}
