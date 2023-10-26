@@ -454,3 +454,39 @@
     padding-left: 40px;
   }
 }
+
+// Team
+.team {
+  padding: 9rem 0 12rem;
+  // .team__wrapper
+
+  &__wrapper {
+    @include ds-flex($gap: 7rem);
+  }
+
+  // .team__img
+
+  &__img {
+    flex: 1;
+  }
+
+  // .team__descr
+
+  &__descr {
+    flex: 1;
+  }
+
+  // .team__heading
+
+  &__heading {
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  // .team__text
+
+  &__text {
+    margin-bottom: 4.5rem;
+  }
+}

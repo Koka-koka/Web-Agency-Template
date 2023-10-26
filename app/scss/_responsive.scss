@@ -39,6 +39,35 @@
       padding: 0 1rem;
     }
   }
+  // Team
+  .team {
+    text-align: center;
+    // .team__wrapper
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    // .team__img
+
+    &__img {
+      flex: 1;
+    }
+
+    // .team__descr
+
+    &__descr {
+      flex: 1;
+    }
+
+    // .team__heading
+
+    &__heading {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 769px) {
