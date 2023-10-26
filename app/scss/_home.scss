@@ -428,3 +428,29 @@
     height: 12px;
   }
 }
+
+// Banner Section
+.banner {
+  background-color: $bg-color;
+  padding: 7.5rem 0;
+  // .banner__wrapper
+
+  &__wrapper {
+    @include ds-flex;
+  }
+
+  // .banner__heading
+
+  &__heading {
+    flex: 1;
+    border-right: 4px solid #e2e2e2;
+    padding-right: 20px;
+  }
+
+  // .banner__text
+
+  &__text {
+    flex: 1;
+    padding-left: 40px;
+  }
+}
