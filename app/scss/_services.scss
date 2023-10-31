@@ -1,0 +1,90 @@
+.services {
+  padding: 4rem 0 10rem;
+  // .services__heading
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  // .services__text
+
+  &__text {
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+
+  // .services__cards
+
+  &__cards {
+    @include ds-flex($jc: center, $ai: stretch);
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  // .services__card
+
+  &__card {
+    max-width: 595px;
+    background-color: $white;
+    border-radius: 40px;
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  &__card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  // .services__img
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    @extend %flex-center;
+    background-color: $items-bg-color;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+
+  // .services__card-title
+
+  &__card-title {
+    min-height: 6rem;
+    margin-bottom: 5px;
+  }
+
+  // .services__card-text
+
+  &__card-text {
+    margin-bottom: 4rem;
+  }
+
+  // .services__card-btns
+
+  &__card-btns {
+    margin-top: auto;
+  }
+
+  // .services__card-btn
+
+  &__card-btn {
+    background-color: $items-bg-color;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+    line-height: 25px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: $border-radius;
+    transition: all 0.2s ease;
+  }
+
+  &__card-btn:hover {
+    color: $white;
+    background-color: $secondary-color;
+  }
+}

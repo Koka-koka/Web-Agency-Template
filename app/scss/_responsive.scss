@@ -28,6 +28,15 @@
       text-align: center;
     }
   }
+
+  // Services
+  .services {
+    // .services__card
+
+    &__card {
+      max-width: 490px;
+    }
+  }
 }
 
 @media (max-width: 1075px) {
@@ -35,6 +44,33 @@
   .home-services {
     &__list {
       padding: 0 5rem;
+    }
+  }
+
+  // Services
+  .services {
+    // .services__card
+
+    &__card {
+      max-width: 800px;
+    }
+  }
+
+  // Vacancy
+  .vacancy {
+    background-color: $bg-color;
+    padding-bottom: 10rem;
+    // .vacancy__wrapper
+
+    &__wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    // .vacancy__heading
+
+    &__heading {
+      text-align: center;
     }
   }
 }
@@ -211,7 +247,7 @@
       margin: 0 auto 15px;
     }
     &__heading {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     &__text {
       margin-bottom: 3rem;
@@ -249,6 +285,27 @@
     }
     &__descr {
       width: 100%;
+    }
+  }
+
+  // Services
+  .services {
+    &__card {
+      padding: 3rem 1rem;
+      align-items: center;
+      text-align: center;
+    }
+    // .services__btns
+
+    &__card-btns {
+      // @include ds-flex($jc: start, $ai: stretch);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__card-btn {
+      margin-left: 0;
     }
   }
 

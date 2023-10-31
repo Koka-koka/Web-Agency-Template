@@ -1,0 +1,35 @@
+.vacancy {
+  background-color: $bg-color;
+  padding-bottom: 10rem;
+  // .vacancy__wrapper
+
+  &__wrapper {
+    padding: 2.5rem 0;
+    @include ds-flex($gap: 5rem);
+  }
+
+  // .vacancy__descr
+
+  &__descr {
+    flex: 1;
+  }
+
+  // .vacancy__heading
+
+  &__heading {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  // .vacancy__text
+
+  &__text {
+    margin-bottom: 3.5rem;
+  }
+
+  // .vacancy__img
+
+  &__img {
+    flex: 1;
+  }
+}

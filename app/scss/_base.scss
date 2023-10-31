@@ -127,7 +127,6 @@ body {
 .button:hover {
   background-color: $items-bg-color;
   color: $secondary-color;
-  border: 1px solid $secondary-color;
 }
 .button:active {
   scale: (0.95);

@@ -17,7 +17,7 @@
 
   &__btns {
     @include ds-flex;
-    margin-bottom: 55px;
+    margin-bottom: 5rem;
   }
 
   // .burger-menu__btn
@@ -51,7 +51,7 @@
   // .burger-menu__item
 
   &__item {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   // .burger-menu__link
