@@ -1,10 +1,10 @@
 .vacancy {
   background-color: $bg-color;
-  padding-bottom: 10rem;
+  padding: 3rem 0;
+  margin-bottom: 10rem;
   // .vacancy__wrapper
 
   &__wrapper {
-    padding: 2.5rem 0;
     @include ds-flex($gap: 5rem);
   }
 

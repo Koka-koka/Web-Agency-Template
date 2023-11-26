@@ -123,6 +123,28 @@
       text-align: center;
     }
   }
+  // About us team
+  .leader-team {
+    // .leader-team__wrapper
+
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(150px, 250px));
+    }
+  }
+
+  // Blog Posts Section about us
+  .blog-posts {
+    // .blog-posts__wrapper
+
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .blog-post {
+    width: 45%;
+  }
 }
 
 @media (max-width: 769px) {
@@ -178,6 +200,7 @@
       border-right: none;
       padding-right: 0;
       padding-bottom: 20px;
+      text-align: center;
     }
 
     // .banner__text
@@ -213,6 +236,11 @@
       left: -10px;
       width: 150px;
     }
+  }
+
+  // About Post
+  .blog-post {
+    width: 100%;
   }
 }
 
@@ -306,6 +334,15 @@
 
     &__card-btn {
       margin-left: 0;
+    }
+  }
+
+  // About us team
+  .leader-team {
+    // .leader-team__wrapper
+
+    &__wrapper {
+      grid-template-columns: minmax(150px, 250px);
     }
   }
 

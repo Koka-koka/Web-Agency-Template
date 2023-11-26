@@ -1,0 +1,142 @@
+.about {
+  padding: 4rem 0;
+  // .about__heading
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  // .about__text
+
+  &__text {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// Team Section
+.leader-team {
+  padding: 10rem 0 14rem;
+  text-align: center;
+  // .leader-team__heading
+
+  &__heading {
+    margin-bottom: 5px;
+  }
+
+  // .leader-team__text
+
+  &__text {
+    max-width: 950px;
+    margin: 0 auto 5.5rem;
+  }
+
+  // .leader-team__wrapper
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-auto-rows: auto;
+    justify-content: space-around;
+    gap: 4rem 20px;
+  }
+
+  // .leader-team__member
+
+  &__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .leader-team__img
+
+  &__img {
+    max-width: 195px;
+    margin-bottom: 2rem;
+  }
+
+  // .leader-team__member-name
+
+  &__member-name {
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
+
+// Blog Posts Section
+.blog-posts {
+  padding-bottom: 10rem;
+  // .blog-posts__heading
+
+  &__heading {
+    margin-bottom: 4.5rem;
+  }
+
+  // .blog-posts__wrapper
+
+  &__wrapper {
+    @include ds-flex($ai: stretch, $gap: 5rem);
+  }
+}
+
+.blog-post {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+
+  // .blog-post__img
+
+  &__img {
+    margin-bottom: 10px;
+  }
+
+  &__img img {
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    width: 100%;
+  }
+
+  // .blog-post__link
+
+  &__link {
+  }
+
+  // .blog-post__title
+
+  &__title {
+    color: $black;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  // .blog-post__details
+
+  &__details {
+    @include ds-flex;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-top: auto;
+  }
+
+  // .blog-post__date
+
+  &__date {
+  }
+
+  // .blog-post__category
+
+  &__category {
+  }
+
+  // .blog-post__cat-link
+
+  &__cat-link {
+  }
+}
