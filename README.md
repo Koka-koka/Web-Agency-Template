@@ -1,1 +1,1 @@
-# Responsive Web Agency Template with HTML, Scss, JS, Gulp, Swiper Slider
+# Responsive Web Agency Multi Page Template with HTML, Sass, JS, Gulp, Swiper Slider, AOS Animation

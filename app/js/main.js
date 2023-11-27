@@ -71,28 +71,71 @@ const accordionItemHeaders = document.querySelectorAll(
 const accordionFirstItemBody = document.querySelector(
   ".accordion__item:nth-child(1) .accordion__item-body"
 );
-// Open first item
-accordionFirstItemBody.style.maxHeight =
-  accordionFirstItemBody.scrollHeight + "px";
 
-accordionItemHeaders.forEach((accordionItemHeader) => {
-  accordionItemHeader.addEventListener("click", (event) => {
-    // Remove active class all headers except clicked item
-    accordionItemHeaders.forEach((accordionItemHeader) => {
-      if (accordionItemHeader == event.target) {
-        return;
+if (accordionFirstItemBody) {
+  // Open first item
+  accordionFirstItemBody.style.maxHeight =
+    accordionFirstItemBody.scrollHeight + "px";
+
+  accordionItemHeaders.forEach((accordionItemHeader) => {
+    accordionItemHeader.addEventListener("click", (event) => {
+      // Remove active class all headers except clicked item
+      accordionItemHeaders.forEach((accordionItemHeader) => {
+        if (accordionItemHeader == event.target) {
+          return;
+        }
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        accordionItemHeader.classList.remove("active");
+        accordionItemBody.style.maxHeight = 0;
+      });
+      // If clicked item is open close and vice versa
+      event.target.classList.toggle("active");
+      const accordionItemBody = event.target.nextElementSibling;
+      if (accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight =
+          accordionItemBody.scrollHeight + "px";
+      } else {
+        accordionItemBody.style.maxHeight = 0;
       }
-      const accordionItemBody = accordionItemHeader.nextElementSibling;
-      accordionItemHeader.classList.remove("active");
-      accordionItemBody.style.maxHeight = 0;
     });
-    // If clicked item is open close and vice versa
-    event.target.classList.toggle("active");
-    const accordionItemBody = event.target.nextElementSibling;
-    if (accordionItemHeader.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-    } else {
-      accordionItemBody.style.maxHeight = 0;
-    }
   });
-});
+}
+
+// Video Popup
+
+const playBtn = document.querySelector(".blog__aside-video-icon");
+
+if (playBtn) {
+  const videoPopup = document.querySelector(".video-popup");
+  const videoPopupCloseBtn = document.querySelector(".video-popup__close");
+
+  // Youtube iframe player
+  let tag = document.createElement("script");
+
+  tag.src = "https://www.youtube.com/iframe_api";
+
+  let firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  let player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "390",
+      width: "640",
+      videoId: "wS_qbDztgVY",
+      playerVars: {
+        playsinline: 1,
+      },
+    });
+  }
+
+  playBtn.addEventListener("click", () => {
+    videoPopup.classList.add("show");
+    player.playVideo();
+  });
+
+  videoPopupCloseBtn.addEventListener("click", () => {
+    videoPopup.classList.remove("show");
+    player.stopVideo();
+  });
+}
