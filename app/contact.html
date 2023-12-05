@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Prata&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Web Agency</title>
+</head>
+
+<body>
+
+    <div class="root-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__btns">
+                        <a href="#" class="button">Connect with us</a>
+                        <div id="menu-btn">
+                            <img src="./images/menu-btn.svg" alt="menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="burger-menu">
+            <div class="burger-menu__btns">
+                <a href="#" class="button burger-menu__btn">
+                    <img src="./images/right-arrow.svg" alt="close">
+                    <span>Start A New Project</span>
+                </a>
+                <div class="burger-menu__btn-close">
+                    <img src="./images/close-icon.png" alt="close">
+                </div>
+            </div>
+            <nav class="burger-menu-nav">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__item">
+                        <a href="index.html" class="burger-menu__link active">Home</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="about-us.html" class="burger-menu__link">About us</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="./contact.html" class="burger-menu__link">Contact us</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="./services.html" class="burger-menu__link">Services</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="blog.html" class="burger-menu__link">Blog</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu__socials">
+                <p class="burger-menu__socials-title">Follow us on</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/instagram-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/fb-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/linkedin-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/twitter-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/youtube-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<main class="main">
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact__heading heading" data-aos="fade-up" data-aos-duration="1000">Contact us</h2>
+            <p class="contact__text" data-aos="fade-down" data-aos-duration="1000">Lorem ipsum dolor sit amet
+                consectetur adipisicing.</p>
+            <div class="contact__wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <!-- Contact details -->
+                <div class="contact__details">
+                    <h3 class="contact__details-title">Contact information</h3>
+                    <p class="contact__details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                        pariatur facere doloribus delectus obcaecati laboriosam.</p>
+                    <div class="contact__details-phone">
+                        <img src="./images/phone-icon.svg" alt="phone icon" class="contact__details-phone-icon">
+                        <a href="tel:+11111111111" class="contact__details-phone-num">+11111111111</a>
+                    </div>
+                    <div class="contact__details-email">
+                        <img src="./images/mail-icon.svg" alt="email icon" class="contact__details-email-icon">
+                        <a href="mailto:test@test.com" class="contact__details-email-link">test@test.com</a>
+                    </div>
+                    <div class="contact__details-paypal">
+                        <img src="./images/paypal-icon.svg" alt="paypal icon" class="contact__details-paypal-icon">
+                        <a href="https://paypal.com" target="_blank"
+                            class="contact__details-paypal-link">https://paypal.com</a>
+                    </div>
+                    <div class="contact__details-location">
+                        <img src="./images/location-icon.svg" alt="location icon"
+                            class="contact__details-location-icon">
+                        <a href="#" class="contact__details-location-link">location</a>
+                    </div>
+                </div>
+                <!-- Contact form -->
+                <form class="contact__form">
+                    <div class="text-inputs">
+                        <label class="text-input">
+                            <div class="text-input__title">First Name</div>
+                            <input class="text-input__input" type="text" name="first-name">
+                        </label>
+                        <label class="text-input">
+                            <div class="text-input__title">Last Name</div>
+                            <input class="text-input__input" type="text" name="last-name">
+                        </label>
+                        <label class="text-input">
+                            <div class="text-input__title">Mail</div>
+                            <input class="text-input__input" type="mail" name="mail">
+                        </label>
+                        <label class="text-input">
+                            <div class="text-input__title">Phone</div>
+                            <input class="text-input__input" type="phone" name="phone">
+                        </label>
+                    </div>
+                    <div class="radioboxes">
+                        <h4 class="radioboxes__heading">What service do you need?</h4>
+                        <div class="radioboxes__wrapper">
+                            <label class="radiobox">
+                                <input class="radiobox__input" type="radio" name="service" value="web-design">
+                                <span class="radiobox__title">Web Design</span>
+                            </label>
+                            <label class="radiobox">
+                                <input class="radiobox__input" type="radio" name="service" value="app-design">
+                                <span class="radiobox__title">App Design</span>
+                            </label>
+                            <label class="radiobox">
+                                <input class="radiobox__input" type="radio" name="service" value="graphics-design">
+                                <span class="radiobox__title">Graphics Design</span>
+                            </label>
+                            <label class="radiobox">
+                                <input class="radiobox__input" type="radio" name="service" value="digital-marketing">
+                                <span class="radiobox__title">Digital Marketing</span>
+                            </label>
+                            <label class="radiobox">
+                                <input class="radiobox__input" type="radio" name="service" value="other">
+                                <span class="radiobox__title">Other</span>
+                            </label>
+                        </div>
+                    </div>
+                    <label class="textarea">
+                        <div class="textarea__title">Message</div>
+                        <textarea class="textarea__input" name="Message"></textarea>
+                    </label>
+                    <div class="submit">
+                        <button class="submit__input button" type="submit" name="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container">
+            <h2 class="work__heading heading">See Our Work</h2>
+            <p class="work__text">Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Vitae quae exercitationem in
+                nulla commodi voluptate unde animi, enim amet ullam sint fugit, ex quidem labore!</p>
+            <!-- Slider main container -->
+            <div class="swiper work__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper work__slider-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide1.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide2.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide3.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide2.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide1.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide3.webp" alt="slide">
+                        </a>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination work__slider-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="footer__logo">
+            <a href="#">
+                <img src="./images/footer-logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Works</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Services</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Contact us</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="socials">
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/instagram-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/fb-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/linkedin-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/twitter-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/youtube-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+        </ul>
+        <div class="footer__terms">
+            <p class="footer__copyright">Copyright <span>2023</span></p>
+            <a href="#" class="footer__conditions">Terms & Conditions</a>
+            <a href="#" class="footer__privacy">Privacy</a>
+        </div>
+    </div>
+</footer>
+</div>
+<div class="overlay"></div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

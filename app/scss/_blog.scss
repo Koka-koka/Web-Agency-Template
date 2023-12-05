@@ -199,16 +199,14 @@
   height: 100vh;
   @extend %flex-center;
   background-color: #000000ba;
-  transform: scale(0);
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   transition: all 0.3s ease;
   z-index: 110;
 
   &.show {
-    transform: scale(1);
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 
   &__close {

@@ -165,6 +165,27 @@
       width: 45%;
     }
   }
+
+  // Contact page
+  .contact {
+    // .contact__wrapper
+
+    &__wrapper {
+      display: block;
+    }
+
+    // .contact__details
+
+    &__details {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    // .contact__form
+    &__form {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 769px) {
@@ -416,6 +437,28 @@
       width: 320px;
     }
   }
+
+  // Contact page
+  .contact {
+    // .contact__wrapper
+    &__wrapper {
+      padding: 2rem;
+    }
+    // .contact__details
+    &__details {
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+    }
+    // .contact__details-phone
+
+    &__details-phone,
+    &__details-email,
+    &__details-paypal,
+    &__details-location {
+      flex-direction: column;
+    }
+  }
+
   .footer {
     &__copyright {
       margin-right: 6rem;

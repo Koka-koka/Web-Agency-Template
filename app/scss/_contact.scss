@@ -1,0 +1,190 @@
+.contact {
+  padding: 4rem 0;
+  // .contact__heading
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  // .contact__text
+
+  &__text {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  // .contact__wrapper
+
+  &__wrapper {
+    background-color: $white;
+    padding: 4rem;
+    border-radius: $border-radius;
+    @include ds-flex($ai: stretch, $gap: 5rem);
+  }
+
+  // .contact__details
+
+  &__details {
+    width: 40%;
+    background-color: #6854fc;
+    padding: 3.5rem 5.5rem;
+    border-radius: $border-radius;
+    color: $white;
+    background-image: url(../images/contact-details-dec.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  // .contact__details-title
+
+  &__details-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  // .contact__details-text
+
+  &__details-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin-bottom: 3.5rem;
+  }
+
+  // .contact__details-phone
+
+  &__details-phone,
+  &__details-email,
+  &__details-paypal,
+  &__details-location {
+    @include ds-flex($jc: start, $ai: center);
+    gap: 2.5rem;
+    font-size: 18px;
+    margin-bottom: 3rem;
+  }
+
+  // .contact__details-email-icon
+  &__details-phone-icon,
+  &__details-email-icon,
+  &__details-paypal-icon,
+  &__details-location-icon {
+    padding: 6px;
+    background-color: $white;
+    @extend %flex-center;
+    border-radius: 50%;
+  }
+
+  // .contact__form
+
+  &__form {
+    width: 60%;
+  }
+}
+
+.text-inputs {
+  @include ds-flex($gap: 4rem 10rem);
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+.text-input {
+  flex-grow: 1;
+  // .text-input__title
+
+  &__title {
+    color: $black;
+    font-size: 18px;
+  }
+
+  // .text-input__input
+
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+  }
+}
+.radioboxes {
+  margin-bottom: 4rem;
+  // .checkboxes__heading
+
+  &__heading {
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  // .checkboxes__wrapper
+
+  &__wrapper {
+    @include ds-flex($gap: 3rem 5rem, $jc: start);
+    flex-wrap: wrap;
+  }
+}
+.radiobox {
+  // .checkbox__input
+
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+
+  // .checkbox__title
+
+  &__title {
+    color: $black;
+    font-size: 18px;
+    @include ds-flex($gap: 5px, $jc: start);
+  }
+
+  &__title::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 29px;
+  }
+
+  &__input:checked + &__title::before {
+    background-image: url(../images/checkbox-checked.svg);
+  }
+
+  &__input:focus + &__title::before {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+}
+.textarea {
+  // .textarea__title
+
+  &__title {
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  // .textarea__input
+
+  &__input {
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: $border-radius;
+    padding: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    resize: none;
+  }
+}
+.submit {
+  text-align: right;
+  margin-top: 3rem;
+}
