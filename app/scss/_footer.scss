@@ -49,13 +49,9 @@
 
   &__terms {
     @extend %flex-center;
+    flex-wrap: wrap;
+    gap: 3rem 9rem;
     color: rgba(255, 255, 255, 0.5);
-  }
-
-  // .footer__copyright
-
-  &__copyright {
-    margin-right: 10rem;
   }
 
   // .footer__conditions

@@ -460,8 +460,9 @@
   }
 
   .footer {
-    &__copyright {
-      margin-right: 6rem;
+    .socials {
+      justify-content: center;
+      gap: 20px;
     }
   }
 }
