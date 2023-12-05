@@ -116,7 +116,8 @@ function buildDist() {
     [
       "app/css/style.min.css",
       "app/js/main.min.js",
-      "app/images/**/*.*",
+      "app/images/**/*.svg",
+      "app/images/**/*.webp",
       "!app/images/src/**/*.*",
       "app/fonts/*.*",
       "app/*.html",
