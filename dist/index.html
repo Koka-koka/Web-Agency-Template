@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Prata&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Web Agency</title>
+</head>
+
+<body>
+
+    <div class="root-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__btns">
+                        <a href="#" class="button">Connect with us</a>
+                        <div id="menu-btn">
+                            <img src="./images/menu-btn.svg" alt="menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="burger-menu">
+            <div class="burger-menu__btns">
+                <a href="#" class="button burger-menu__btn">
+                    <img src="./images/right-arrow.svg" alt="close">
+                    <span>Start A New Project</span>
+                </a>
+                <div class="burger-menu__btn-close">
+                    <img src="./images/close-icon.webp" alt="close">
+                </div>
+            </div>
+            <nav class="burger-menu-nav">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__item">
+                        <a href="index.html" class="burger-menu__link active">Home</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="about-us.html" class="burger-menu__link">About us</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="./contact.html" class="burger-menu__link">Contact us</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="./services.html" class="burger-menu__link">Services</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="blog.html" class="burger-menu__link">Blog</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="terms.html" class="burger-menu__link">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu__socials">
+                <p class="burger-menu__socials-title">Follow us on</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/instagram-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/fb-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/linkedin-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/twitter-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <img src="./images/youtube-icon.svg" alt="" class="socials__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<main class="main">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__descr">
+                    <div class="hero__sticker">
+                        <img src="./images/hero-sticker.svg" alt="elipse">
+                        <p class="hero__sticker-title">#1 Digital company in the town!</p>
+                    </div>
+                    <h1 class="hero__heading">professional development services for your business.</h1>
+                    <p class="hero__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum placeat,
+                        consequuntur doloribus minus deleniti adipisci, eos vero fuga rem, aspernatur tempora velit
+                        laboriosam quibusdam omnis sed magni.</p>
+                    <div class="hero__btns">
+                        <a href="#" class="button">Connect with us</a>
+                        <a href="#" class="hero__link title">Browse our works</a>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./images/hero-circles.webp" alt="circles">
+                </div>
+            </div>
+        </div>
+        <div class="hero__decor-imgs">
+            <img src="./images/hero-dec-circle.svg" alt="" class="hero__decor-circle">
+            <img src="./images/hero-dec-circle.svg" alt="" class="hero__decor-circle">
+            <img src="./images/hero-dec-circle.svg" alt="" class="hero__decor-circle">
+            <img src="./images/hero-dec-circle.svg" alt="" class="hero__decor-circle">
+            <img src="./images/hero-dec-cross.svg" alt="" class="hero__decor-cross">
+            <img src="./images/hero-dec-cross.svg" alt="" class="hero__decor-cross">
+            <img src="./images/hero-dec-cross.svg" alt="" class="hero__decor-cross">
+            <img src="./images/hero-dec-cross.svg" alt="" class="hero__decor-cross">
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="home-services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container">
+            <h2 class="home-services__title heading">
+                Services that lead the way to better business
+            </h2>
+            <p class="home-services__text">Lorem
+                ipsum dolor sit,
+                amet consectetur
+                adipisicing
+                elit. Veritatis neque
+                fuga iste qui. Illum quasi corrupti corporis totam facilis itaque excepturi, quas tenetur, expedita,
+                beatae reprehenderit amet autem impedit temporibus.
+            </p>
+            <ul class="home-services__list">
+                <li class="home-services__list-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#" class="home-services__list-link">
+                        <div class="home-services__list-img">
+                            <img src="./images/mob-services.svg" alt="service">
+                        </div>
+                        <h4 class="home-services__list-title title">Mobile App Designing</h4>
+                        <p class="home-services__list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Expedita, quos?
+                        </p>
+                    </a>
+                </li>
+                <li class="home-services__list-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#" class="home-services__list-link">
+                        <div class="home-services__list-img">
+                            <img src="./images/web-services.svg" alt="service">
+                        </div>
+                        <h4 class="home-services__list-title title">Website Designing</h4>
+                        <p class="home-services__list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Expedita, quos?
+                        </p>
+                    </a>
+                </li>
+                <li class="home-services__list-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#" class="home-services__list-link">
+                        <div class="home-services__list-img">
+                            <img src="./images/design-services.svg" alt="service">
+                        </div>
+                        <h4 class="home-services__list-title title">Graphic Designing</h4>
+                        <p class="home-services__list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Expedita, quos?
+                        </p>
+                    </a>
+                </li>
+                <li class="home-services__list-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#" class="home-services__list-link">
+                        <div class="home-services__list-img">
+                            <img src="./images/digital-services.svg" alt="service">
+                        </div>
+                        <h4 class="home-services__list-title title">Digital Marketing</h4>
+                        <p class="home-services__list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Expedita, quos?
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Companies -->
+    <section class="companies" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container">
+            <div class="companies__wrapper">
+                <h2 class="companies__heading heading">
+                    Companies we work with
+                </h2>
+                <p class="companies__text">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Animi, corrupti
+                    officia earum, expedita debitis odio dicta repudiandae voluptas aliquid nemo mollitia sequi
+                    similique veniam nostrum!</p>
+                <div class="companies__logos">
+                    <div class="companies__logos-top" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <img src="./images/pepsi.svg" alt="company logo">
+                        <img src="./images/comp-logo1.svg" alt="company logo">
+                        <img src="./images/comp-logo2.svg" alt="company logo">
+                        <img src="./images/comp-logo3.svg" alt="company logo">
+                        <img src="./images/comp-logo4.svg" alt="company logo">
+                        <img src="./images/comp-logo5.svg" alt="company logo">
+                    </div>
+                    <div class="companies__logos-bottom" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-delay="500">
+                        <img src="./images/comp-logo6.svg" alt="company logo">
+                        <img src="./images/comp-logo7.svg" alt="company logo">
+                        <img src="./images/comp-logo8.svg" alt="company logo">
+                        <img src="./images/comp-logo9.svg" alt="company logo">
+                        <img src="./images/comp-logo10.svg" alt="company logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <div class="process__wrapper">
+                <div class="process__img">
+                    <img src="./images/process-img.webp" alt="process" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="200">
+                </div>
+                <div class="process__descr" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="process__heading heading">Our Process</h2>
+                    <p class="process__text">Lorem
+                        ipsum dolor sit amet
+                        consectetur adipisicing elit. Hic vitae ex
+                        assumenda, voluptatem sequi itaque aperiam atque dolore vel numquam ipsum dolor sit amet
+                        consectetur adipisicing elit. Hic vitae!
+                    </p>
+                    <ul class="process__list">
+                        <li class="process__item">
+                            <div class="process__item-icon">
+                                <img src="./images/process-icon1.svg" alt="process icon">
+                            </div>
+                            <div class="process__item-descr" data-aos="fade-left" data-aos-duration="1200"
+                                data-aos-delay="200">
+                                <h4 class="process__item-title">Discovery</h4>
+                                <p class="process__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore, alias! Maxime pariatur aliquam sapiente eum dolorem? Similique nisi
+                                    consequatur, vero quaerat itaque sed ducimus eligendi.</p>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <div class="process__item-icon">
+                                <img src="./images/process-icon2.svg" alt="process icon">
+                            </div>
+                            <div class="process__item-descr" data-aos="fade-left" data-aos-duration="1200"
+                                data-aos-delay="400">
+                                <h4 class="process__item-title">Plan</h4>
+                                <p class="process__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore, alias! Maxime pariatur aliquam sapiente eum dolorem? Similique nisi
+                                    consequatur, vero quaerat itaque sed ducimus eligendi.</p>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <div class="process__item-icon">
+                                <img src="./images/process-icon3.svg" alt="process icon">
+                            </div>
+                            <div class="process__item-descr" data-aos="fade-left" data-aos-duration="1200"
+                                data-aos-delay="600">
+                                <h4 class="process__item-title">Execute</h4>
+                                <p class="process__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore, alias! Maxime pariatur aliquam sapiente eum dolorem? Similique nisi
+                                    consequatur, vero quaerat itaque sed ducimus eligendi.</p>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <div class="process__item-icon">
+                                <img src="./images/process-icon4.svg" alt="process icon">
+                            </div>
+                            <div class="process__item-descr" data-aos="fade-left" data-aos-duration="1200"
+                                data-aos-delay="800">
+                                <h4 class="process__item-title">Deliver</h4>
+                                <p class="process__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore, alias! Maxime pariatur aliquam sapiente eum dolorem? Similique nisi
+                                    consequatur, vero quaerat itaque sed ducimus eligendi.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section class="work" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container">
+            <h2 class="work__heading heading">See Our Work</h2>
+            <p class="work__text">Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Vitae quae exercitationem in
+                nulla commodi voluptate unde animi, enim amet ullam sint fugit, ex quidem labore!</p>
+            <!-- Slider main container -->
+            <div class="swiper work__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper work__slider-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide1.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide2.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide3.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide2.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide1.webp" alt="slide">
+                        </a>
+                    </div>
+                    <div class="swiper-slide work__slider-slide">
+                        <a href="#">
+                            <img src="./images/content/slider/work-slide3.webp" alt="slide">
+                        </a>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination work__slider-pagination"></div>
+    
+            </div>
+        </div>
+    </section>
+    <!-- Banner -->
+    <section class="banner" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container">
+            <div class="banner__wrapper">
+                <h3 class="banner__heading heading">
+                    We’re a lean creative agency that uses design and code to solve problems.
+                </h3>
+                <p class="banner__text" data-aos="fade-down">Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Impedit assumenda iste
+                    qui tempore sunt odio autem unde dolor animi facere aliquam accusantium vero porro fugit, beatae
+                    laudantium incidunt eum. Minima, sequi, nesciunt unde asperiores doloribus sint quo exercitationem,
+                    numquam assumenda voluptatum ipsa! Inventore, incidunt dicta!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <div class="team__wrapper">
+                <div class="team__img">
+                    <img src="./images/content/team.webp" alt="team" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="200">
+                </div>
+                <div class="team__descr" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                    <h3 class="team__heading heading">
+                        Designed and built by an astonishing creative team.
+                    </h3>
+                    <p class="team__text">Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Aliquam blanditiis
+                        ipsa rerum necessitatibus amet quam autem. Aut, similique consequuntur quo ullam maxime maiores
+                        odio ab.
+                    </p>
+                    <a href="#" class="team__btn button">About us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+                <div class="testimonials__imgs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="testimonials__imgs-row testimonials__imgs-row--top">
+                        <div class="testimonials__img"><img src="./images/content/testimonial1.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial2.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial3.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial4.webp" alt="testimonial">
+                        </div>
+                    </div>
+                    <div class="testimonials__imgs-row testimonials__imgs-row--middle">
+                        <div class="testimonials__img"><img src="./images/content/testimonial5.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial6.webp" alt="testimonial">
+                        </div>
+                    </div>
+                    <div class="testimonials__imgs-row testimonials__imgs-row--bottom">
+                        <div class="testimonials__img"><img src="./images/content/testimonial7.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial8.webp" alt="testimonial">
+                        </div>
+                        <div class="testimonials__img"><img src="./images/content/testimonial9.webp" alt="testimonial">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__descr" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                    <h3 class="testimonials__heading heading">Meet Client
+                        Satisfaction after working with us</h3>
+                    <!-- Slider main container -->
+                    <div class="swiper testimonials__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper testimonials__slider-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide testimonials__slide">
+                                <div class="testimonials__slide-wrapper">
+                                    <h4 class="testimonials__title"> Feels an amazing agency</h4>
+                                    <div class="testimonials__rating">
+                                        <img src="./images/rating.svg" alt="rating">
+                                    </div>
+                                    <p class="testimonials__text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Amet
+                                        sit facilis sunt enim aperiam magnam officia similique accusamus perferendis,
+                                        odio
+                                        consequuntur hic temporibus et. Velit quae libero ab quos excepturi!
+                                    </p>
+                                    <div class="testimonials__profile">
+                                        <div class="testimonials__profile-avatar">
+                                            <img src="./images/content/testimonial-avatar1.webp" alt="avatar">
+                                        </div>
+                                        <div class="testimonials__profile-details">
+                                            <h5 class="testimonials__profile-name">Gwen Stacy</h5>
+                                            <p class="testimonials__profile-position">Cloudexter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__slide">
+                                <div class="testimonials__slide-wrapper">
+                                    <h4 class="testimonials__title"> High quality services</h4>
+                                    <div class="testimonials__rating">
+                                        <img src="./images/rating.svg" alt="rating">
+                                    </div>
+                                    <p class="testimonials__text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Amet
+                                        sit facilis sunt enim aperiam magnam officia similique accusamus perferendis,
+                                        odio
+                                        consequuntur hic temporibus et. Velit quae libero ab quos excepturi!
+                                    </p>
+                                    <div class="testimonials__profile">
+                                        <div class="testimonials__profile-avatar">
+                                            <img src="./images/content/testimonial1.webp" alt="avatar">
+                                        </div>
+                                        <div class="testimonials__profile-details">
+                                            <h5 class="testimonials__profile-name">Gwen Stacy</h5>
+                                            <p class="testimonials__profile-position">Cloudexter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="testimonials__nav-btns">
+                            <div class="swiper-button-prev testimonials__btn-prev"><img
+                                    src="./images/slider-arrow-left.svg" alt="arrow left"></div>
+                            <div class="swiper-button-next testimonials__btn-next">
+                                <img src="./images/slider-arrow-right.svg" alt="arrow right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Acordion -->
+    <section class="accordion">
+        <div class="container">
+            <h3 class="accordion__heading heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Frequently Asked Questions</h3>
+            <p class="accordion__text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptate eligendi sunt,
+                blanditiis delectus nesciunt numquam cum voluptatum optio ad corporis praesentium recusandae libero
+                quidem
+                a? Doloribus ea illum nemo aut.
+            </p>
+            <div class="accordion__items" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="accordion__item">
+                    <div class="accordion__item-header active">
+                        What is Web Development?
+                    </div>
+                    <div class="accordion__item-body">
+                        <p class="accordion__item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat eos, excepturi
+                            sapiente laboriosam facilis, illo reprehenderit ut alias eum quo sed consectetur aperiam
+                            dolore soluta harum eligendi doloribus. Rerum perferendis excepturi commodi adipisci
+                            reiciendis.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__item-header">
+                        What is Mobile Development?
+                    </div>
+                    <div class="accordion__item-body">
+                        <p class="accordion__item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo dignissimos? Minima
+                            excepturi dolor voluptatibus odio dolore perspiciatis, nam a cum fuga, iure id veritatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__item-header">
+                        What is Graphic Designing?
+                    </div>
+                    <div class="accordion__item-body">
+                        <p class="accordion__item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere nostrum
+                            impedit molestias. Officia debitis, porro voluptate temporibus vero nisi iusto ullam,
+                            incidunt accusamus natus sunt aliquam nemo esse fuga.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__item-header">
+                        What is Digital Marketing?
+                    </div>
+                    <div class="accordion__item-body">
+                        <p class="accordion__item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam delectus hic
+                            necessitatibus omnis ex! Itaque perspiciatis perferendis iste hic odio voluptas, minus
+                            enim magnam qui, inventore ut harum doloribus rem reprehenderit illum exercitationem
+                            optio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        <div class="footer__logo">
+            <a href="#">
+                <img src="./images/footer-logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Works</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Services</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Contact us</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Socials -->
+        <ul class="socials">
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/instagram-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/fb-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/linkedin-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/twitter-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+            <li class="socials__item">
+                <a href="#" class="socials__link">
+                    <img src="./images/youtube-icon.svg" alt="" class="socials__icon">
+                </a>
+            </li>
+        </ul>
+        <div class="footer__terms">
+            <p class="footer__copyright">Copyright <span>2023</span></p>
+            <div class="footer__terms-links">
+                <a href="#" class="footer__conditions">Terms & Conditions</a>
+                <a href="#" class="footer__privacy">Privacy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<div class="overlay"></div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
