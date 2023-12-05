@@ -464,6 +464,9 @@
     text-align: center;
   }
   .footer {
+    &__wrapper {
+      padding: 0;
+    }
     .socials {
       justify-content: center;
       gap: 20px;
