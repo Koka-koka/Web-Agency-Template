@@ -57,11 +57,11 @@
     background-color: $white;
     border-radius: $border-radius;
     margin-bottom: 15px;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   &__aside-post:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
     box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.07);
   }
 
@@ -134,7 +134,7 @@
   flex-direction: column;
   background-color: $bg-color;
   border-radius: $border-radius;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   // .blog-post__img
 
   &__img {
@@ -165,7 +165,7 @@
   }
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
     box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.07);
   }
 }
